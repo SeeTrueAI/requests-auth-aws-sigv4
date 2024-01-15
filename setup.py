@@ -6,7 +6,7 @@ with open("README.md", "r") as f:
     long_desc = f.read()
 
 setuptools.setup(
-    name="requests-auth-aws-sigv4",
+    name="requests-auth-aws-sigv4-st",  # "st" here represents SeeTrue builds
     version=__version__,
     author="Andrew Roth",
     author_email="andrew@andrewjroth.com",

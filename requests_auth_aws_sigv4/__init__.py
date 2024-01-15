@@ -18,7 +18,18 @@ try:
 except ImportError:
     boto3 = None
 
-__version__ = '0.8'
+'''
+Ievgen made some contributions to this repository that we need for uploading files to Seaweed.
+However, even though the contributions were merged, no release was issued since.
+Until that time, we are releasing our own versions, using package name "requests-auth-aws-sigv4-st"
+(with "-st" suffix to note differentiate from releases from the original repo).
+
+SeeTrue Changelog:
+1.0 - Initial revision, based on commit bf46a91a2ce4a7ffeb4038694412bc514731603f from original repo
+      which includes Ievgen's merged PRs.
+
+'''
+__version__ = '1.0'
 
 log = logging.getLogger(__name__)
 
